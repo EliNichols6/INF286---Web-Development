@@ -1,0 +1,50 @@
+body {
+    background-color: #008080;
+    font-family:Times
+  }
+
+p {
+      color: black;   
+  }
+
+table {
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.cat {
+    height: 250px;
+    width: 250px;
+}
+
+#laser {
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#space {
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;    
+}
+
+.container-A #heading {
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.container-A #text {
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
