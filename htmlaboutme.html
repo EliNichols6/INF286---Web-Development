@@ -1,10 +1,20 @@
 <html>
    <head>
       <title>Eli Nichols About Me</title>
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	  <link rel="stylesheet" type="text/css" href="./styles/my_style_htmlaboutme.css" />
-   </head>
-   <body>
+	  
+	  <script src="./js/myScript.js"></script>
+	</head>
+   <body id="myWebpage">
+	
+
+
       <h1>Eli Nichols About Me</h1>
+	  <h1 class="tilt">THIS IS A GOOGLE FONT - TILT PRISM</h1>
+	  <button class="btn btn-primary">Bootstrap Example Button</button>
+	<button type="button" class="btn btn-info">Info</button>
+	<button type="button" class="btn btn-dark">Dark</button>
       <p>My name is Eli Nichols. I am a freshman at NKU studying Cybersecurity. I like using computers. I first started using computers when I was 8. I played a game called Garry's Mod on my brothers computer. And ever since I have been working with computers all my life. This made me want to pursue something IT related for a career. I don't know too many programming languages but I have dabbled in Javascript and C and would say I'm fairly proficient with Python. I look forward to learning HTML in this course.</p>
       <a href="https://www.w3schools.com/html">Link to w3school's HTML page</a>
 	<br><br>
@@ -16,7 +26,18 @@
 	<input type="text">
 	<input type="submit">
 	  </div>
-	
+
+	  <form method="POST" action="myfile.php">
+          
+		Enter Font Size: 
+		<input id="fontSize" type="text" name="Size" />
+		<input id="SubmitButton" type="button" name="submitButton" value="Submit" onclick="alertOnButton2(this)"/>
+
+
+	</form>
+	<input id="APIrequest" type="button" value="API Call" onclick="httpRequest()"/>
+	<br>
+
 	  <h2>Interests</h2>
 	<ul>
 	<li>Gaming</li>

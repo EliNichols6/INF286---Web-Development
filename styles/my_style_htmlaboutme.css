@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Tilt+Prism');
 
 body {
     font-family:'Lucida Sans';
     background-color: teal;
+    font-size: 14px;
 }
 
 .Bengals {
@@ -27,4 +29,8 @@ table {
     height: 70px;
     background-color: black;
     color: white
+}
+
+.tilt {
+    font-family:'Tilt Prism';
 }
