@@ -1,3 +1,6 @@
+const fs = require('fs');
+const request = require('request')
+
 function alertOnButton() {
     let color = document.getElementById("fontSize").value
     let webpage = document.getElementById("myWebpage");
@@ -37,3 +40,45 @@ function httpRequest() {
   };
 
 }
+
+function isPalindrome(word) {
+  if (word === word.split('').reverse().join('')) {
+    console.log("True");
+  } else {
+    console.log("False");
+  }
+
+}
+
+function listFiles(directory) {
+  fs.readdir(directory, (err, files) => {
+    if (err) {
+      console.log(err);
+    }
+    console.log(files);
+  });
+}
+
+function readFile(path) {
+  fs.readFile(path, 'utf8', (err, data) => {
+    if (err) {
+      console.log(err);
+    }
+    console.log(data);
+  });
+}
+
+function makeRequest(url) {
+  request(url, (error, response, body) => {
+    if (error) {
+      console.log(error);
+    }
+    console.log("Status: ", response);
+    console.log("Body: ", body);
+  })
+}
+
+isPalindrome("racecar");
+listFiles("./test/");
+readFile("./test/text1.txt");
+makeRequest("http://www.google.com");
